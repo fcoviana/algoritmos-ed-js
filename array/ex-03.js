@@ -33,14 +33,14 @@ Array.prototype.reIndex = function (myArray) {
   const newArray = [];
   for (let i = 0; i < myArray.length; i++) {
     if (myArray[i] !== undefined) {
-        newArray.push(myArray[i]);
-      }
+      newArray.push(myArray[i]);
+    }
   }
   return newArray;
 }
 
 Array.prototype.removeFirstPosition = function () {
-  for(let i = 0; i < this.length; i++) {
+  for (let i = 0; i < this.length; i++) {
     this[i] = this[i + 1];
   }
   return this.reIndex(this);
@@ -49,3 +49,13 @@ Array.prototype.removeFirstPosition = function () {
 numbers = numbers.removeFirstPosition();
 
 console.log('Lista remove', numbers);
+
+// Remover 
+numbers.splice(3, 3);
+
+console.log('Lista remove pos-splice', numbers);
+
+// Adicionar
+numbers.splice(3, 0, 0, 1, 2);
+
+console.log('Lista add pos-splice', numbers);
