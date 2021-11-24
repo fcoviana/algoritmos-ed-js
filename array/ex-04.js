@@ -15,3 +15,11 @@ const friends = [
 ];
 
 console.log('sort friends: ', friends.sort((a, b) => a.age - b.age));
+
+function comparePerson(person1, person2) {
+  if (person1.age < person2.age) return -1;
+  if (person1.age > person2.age) return 1;
+  return 0;
+}
+
+console.log('sort friends: ', friends.sort(comparePerson));
