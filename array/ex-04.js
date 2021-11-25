@@ -1,7 +1,7 @@
 /*
 *
 * Exemplo de com usar os metodos nativos do Array
-* includes | sort
+* includes | sort | localeCompare
 *
 */
 let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -23,3 +23,7 @@ function comparePerson(person1, person2) {
 }
 
 console.log('sort friends: ', friends.sort(comparePerson));
+
+let names = ['val', 'zena', 'bia', 'ane'];
+
+console.log('sort string: ', names.sort((a, b) => a.localeCompare(b)));
