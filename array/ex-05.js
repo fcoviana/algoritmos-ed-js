@@ -9,3 +9,6 @@ numbers.push(12);
 
 console.log('index number 12: ',numbers.indexOf(12));
 console.log('index number 100: ',numbers.indexOf(100));
+
+console.log('index number 12: ',numbers.lastIndexOf(12));
+console.log('index number 100: ',numbers.lastIndexOf(100));
