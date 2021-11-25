@@ -20,3 +20,5 @@ function multipleOf2(element, index, array) {
 
 console.log('find number: ', numbers.find(multipleOf2));
 console.log('findIndex number: ', numbers.findIndex(multipleOf2));
+
+console.log('toString', numbers.toString());
